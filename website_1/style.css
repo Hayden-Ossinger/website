@@ -1,0 +1,39 @@
+/* div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu div {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu div:hover {
+    background-color: #777;
+  } */
+
+div.scrollmenu {
+    width: 180px;
+    height: 600px;
+    /* margin: 100px; */
+    overflow-y: scroll;
+
+    transform-origin: 90px 300px;
+    transform: rotate(-90deg);
+}
+
+div.scrollmenu div {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+    text-align: center;
+
+    background-color: #a8a8df;
+
+    transform: rotate(90deg);
+}
