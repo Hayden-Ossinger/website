@@ -1,4 +1,51 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- <canvas class="bike"></canvas> -->
+    <script type="module" src="main.js"></script>
+    <!-- <script>
+        let scene, camera, renderer;
+
+        function init() {
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0xdddddd);
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+            renderer = new THREE.WebGLRenderer({ appendChild: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            let loader = new THREE.GLTFLoader();
+            loader.load('scene.gltf', function (gltf) {
+                scene.add(gltf.scene);
+                renderer.render(scene, camera);
+            }, undefined, function (error) {
+
+                console.error(error);
+
+            });
+        }
+        init();
+    </script> -->
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>My Personal Website</title>
@@ -36,4 +83,4 @@
         setTimeout(changeImage, 5000);
     </script>
 </body>
-</html>
+</html> -->
