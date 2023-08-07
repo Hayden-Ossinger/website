@@ -4,83 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>My first three.js app</title>
-    <style>
-        body {
-            margin: 0;
-        }
-    </style>
-
+    <style src = './styles.css'></style>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
-    <!-- <canvas class="bike"></canvas> -->
-    <script type="module" src="main.js"></script>
-    <!-- <script>
-        let scene, camera, renderer;
-
-        function init() {
-            scene = new THREE.Scene();
-            scene.background = new THREE.Color(0xdddddd);
-            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-            renderer = new THREE.WebGLRenderer({ appendChild: true });
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            document.body.appendChild(renderer.domElement);
-
-            let loader = new THREE.GLTFLoader();
-            loader.load('scene.gltf', function (gltf) {
-                scene.add(gltf.scene);
-                renderer.render(scene, camera);
-            }, undefined, function (error) {
-
-                console.error(error);
-
-            });
-        }
-        init();
-    </script> -->
+    <script type="module" src="./3d/main.js"></script>
+    <div class = 'topBar'>
+        <button class = 'topButton' id='basic' type="button">Click Me!</button>
+        <button class = 'topButton' id='3d' type="button">Click Me!</button>
+    </div>
 </body>
 
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>My Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .center-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
-        }
-        .center-image img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-    </header>
-    <div class="center-image">
-        <img id="dynamic-image" src="laptop.png" alt="Dynamic Image">
-    </div>
-    <script>
-        function changeImage() {
-            var image = document.getElementById("dynamic-image");
-            image.src = "new-image.jpg";
-            image.alt = "New Dynamic Image";
-        }
-
-        // Call the changeImage function after 5 seconds
-        setTimeout(changeImage, 5000);
-    </script>
-</body>
-</html> -->

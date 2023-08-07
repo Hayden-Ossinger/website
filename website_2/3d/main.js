@@ -17,7 +17,7 @@ document.body.appendChild(renderer.domElement);
 
 const loader = new GLTFLoader();
 let root;
-loader.load('antique_bireau_desk.glb', function (glb) {
+loader.load('./3d/office_desk.glb', function (glb) {
     console.log("Here: ", glb);
     root = glb.scene;
     root.scale.set(.002, .002, .002);
@@ -35,33 +35,12 @@ loader.load('antique_bireau_desk.glb', function (glb) {
 let mouseX = 0;
 let mouseY = 0;
 
-let targetX = 0;
-let targetY = 0;
-
-document.addEventListener('pointermove', (event) => {
-    mouseX = (event.clientX - (window.innerWidth / 2));
-    mouseY = (event.clientY - (window.innerHeight / 2));
-    // console.log("Here 1: ", mouseX);
-});
-
-// model.rotateX(90 * Math.PI);
-
-// while (true) {
-//     scene.rotation.x += .5 * (targetX - scene.rotation.x);
-//     scene.rotation.y += .5 * (targetY - scene.rotation.y);
-//     requestAnimationFrame(animate);
-//     renderer.render(scene, camera);
-// }
 let count = 0;
 function animate() {
     requestAnimationFrame(animate);
-    // if (root) {
-    //     root.rotation.y += .005;
-    // } else {
-    //     count += 1;
-    //     console.log("rotation not working: ", count);
-    // }
     renderer.render(scene, camera);
 };
 
 animate();
+
+
