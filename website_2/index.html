@@ -4,16 +4,31 @@
 <head>
     <meta charset="utf-8">
     <title>My first three.js app</title>
-    <style src = './styles.css'></style>
+    <style src='./styles.css'></style>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
-<body>
-    <script type="module" src="./3d/main.js"></script>
-    <div class = 'topBar'>
-        <button class = 'topButton' id='basic' type="button">Click Me!</button>
-        <button class = 'topButton' id='3d' type="button">Click Me!</button>
+<body id='three-dimensional-body'>
+    <script type="module" src="./basic/basic.ts"></script>
+    <script type="module" src="./main.ts"></script>
+
+    <div id='topBar' class='three-dimensional'>
+        <button id='topButtonBasic' type="button">Traditional</button>
+        <button id='topButton3D' type="button">3-Dimensional</button>
+    </div>
+
+    <div class='three-dimensional'>
+        <script type="module" src="./3d/3d.ts"></script>
+    </div>
+</body>
+
+
+
+<body id='basic-body'>
+    <div class='basic' id='basicDiv'>
+        <div class='basic' id="'terminal">
+
+        </div>
     </div>
 </body>
 

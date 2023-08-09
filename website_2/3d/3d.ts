@@ -36,11 +36,11 @@ let mouseX = 0;
 let mouseY = 0;
 
 let count = 0;
-function animate() {
+
+export function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
 };
 
-animate();
 
 
