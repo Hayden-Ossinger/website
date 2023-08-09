@@ -2,34 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first three.js app</title>
-    <style src='./styles.css'></style>
+    <style src="./styles.css"></style>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id='three-dimensional-body'>
-    <script type="module" src="./basic/basic.ts"></script>
-    <script type="module" src="./main.ts"></script>
+<body>
+    <div id="main-div">
+        <div id="topBar">
+            <div id="navButtons" class="">
+                <button class="social-logo" type="button">GitHub</button>
+                <button class="social-logo" type="button">Linked-In</button>
+                <button class="social-logo" type="button">Lehigh</button>
+                <!-- <input type="image" id="github-button" src="./images/github-mark.svg"> -->
+            </div>
 
-    <div id='topBar' class='three-dimensional'>
-        <button id='topButtonBasic' type="button">Traditional</button>
-        <button id='topButton3D' type="button">3-Dimensional</button>
-    </div>
-
-    <div class='three-dimensional'>
-        <script type="module" src="./3d/3d.ts"></script>
-    </div>
-</body>
-
-
-
-<body id='basic-body'>
-    <div class='basic' id='basicDiv'>
-        <div class='basic' id="'terminal">
-
+            <div id="navButtons">
+                <button id="topButtonBasic" type="button">Traditional</button>
+                <button id="topButton3D" type="button">3-Dimensional</button>
+            </div>
         </div>
+
+
+        <div class="basic">
+            <!-- <script type="module" src="./3d/3d.ts"></script> -->
+            <p id="name">Hayden Ossinger</p>
+            <p id="name-subheading">I am a fourth year studying at Lehigh University in Bethlehem, PA</p>
+
+            <div id="projects"></div>
+            <div id="studies"></div>
+            <div id="about"></div>
+            <div id="contact"></div>
+        </div>
+
     </div>
+
+
+
 </body>
 
 </html>
