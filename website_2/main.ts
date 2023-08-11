@@ -3,6 +3,25 @@ import { animate } from "./3d/3d";
 
 const portfolioBasic = document.getElementById("topButtonBasic");
 const portfolio3d = document.getElementById("topButton3D");
+const navbar = document.getElementById("navbar-button");
+let navbar_visible = false;
+
+
+if (navbar) {
+    navbar.addEventListener("click", function () {
+        const content = document.getElementById("navbar-content");
+
+        if (content && navbar_visible) {
+            content.style.visibility = "hidden";
+            navbar_visible = false;
+        }else if (content && !navbar_visible) {
+            content.style.visibility = "visible";
+            navbar_visible = true;
+        }
+    });
+}else{
+    console.log("No");
+}
 
 if (portfolioBasic) {
     portfolioBasic.addEventListener("click", function () {
